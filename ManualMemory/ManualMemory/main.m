@@ -7,28 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface Person : NSObject {
-    NSString *_name;
-}
--(void) setName: (NSString *) name;
--(NSString *) getName;
-@end
-@implementation Person
--(void) setName: (NSString *) name {
-    _name = name;
-}
--(NSString *) getName {
-    return _name;
-}
-
-@end
-
+#import "Person.h"
+#import "Ship.h"
 
 int main(int argc, const char * argv[]) {
     Person *person = [[Person alloc] init];
-    [person setName:@"Khoa"];
-    NSLog(@"%@", [person getName]);
+    Ship *discoverOne = [[Ship alloc] init];
+    person.name = @"Khoa";
+    [discoverOne setCaptain:person];
+    NSLog(@"%@", [discoverOne captain].name);
     [person release];
+    NSLog(@"%@", [discoverOne captain]. name);
+    [discoverOne release];
     return 0;
 }
+
