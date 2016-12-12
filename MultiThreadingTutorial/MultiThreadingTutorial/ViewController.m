@@ -70,7 +70,7 @@
     TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"
                                                           forIndexPath:indexPath];
     Bird *item = self.myArray[indexPath.row];
-    [cell configureCell:self.arrCache[indexPath.row] andTitle:item.birdName];
+    [cell configureCell:(UIImage *)self.arrCache[indexPath.row] andTitle:item.birdName];
     return cell;
 }
 

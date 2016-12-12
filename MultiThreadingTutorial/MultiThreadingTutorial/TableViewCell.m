@@ -16,7 +16,7 @@
 }
 
 -(void) configureCell:(UIImage *) image andTitle:(NSString *) label {
-    self.imageView.image = image;
+    self.birdImageView.image = image;
     self.nameLabel.text = label;
 }
 

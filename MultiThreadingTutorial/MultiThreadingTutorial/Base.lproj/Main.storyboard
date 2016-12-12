@@ -29,7 +29,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="256"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zoh-Xe-A0K" id="P65-Je-sBm">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="255"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="255.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8DI-d0-Lbr">
@@ -61,7 +61,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="imageView" destination="Ydc-VW-KUv" id="A36-SC-k1r"/>
+                                            <outlet property="birdImageView" destination="Ydc-VW-KUv" id="Z8J-ll-MGb"/>
                                             <outlet property="nameLabel" destination="OBm-3B-8OX" id="BGd-hk-iAp"/>
                                         </connections>
                                     </tableViewCell>

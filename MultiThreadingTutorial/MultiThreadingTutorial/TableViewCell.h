@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *birdImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 -(void) configureCell:(UIImage *) image andTitle:(NSString *) label;
 @end
